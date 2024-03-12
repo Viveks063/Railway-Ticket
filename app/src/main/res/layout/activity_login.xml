@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0B7C8A"
+        app:title="Welcome"
+        app:titleTextColor="@color/white"
+        android:id="@+id/toolbar2"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/source"
+        android:hint="From"
+        android:background="@android:drawable/editbox_background"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/source"
+        android:layout_marginTop="30dp"
+        android:hint="Destination"
+        android:id="@+id/destination"
+        android:background="@android:drawable/editbox_background"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Class"
+        android:id="@+id/classtext"
+        android:layout_below="@id/destination"
+        android:layout_marginTop="30dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/classtext"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/classradio"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ist Class"
+            android:id="@+id/firstc"
+            android:textStyle="bold"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IInd Class"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/secondc"
+            android:textStyle="bold"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AC Class"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/Acclass"
+            android:textStyle="bold"
+            />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/classradio"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:hint="No. of travelers"
+        android:id="@+id/counttravel"
+        android:background="@android:drawable/editbox_background"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:id="@+id/proceedbutton"
+        android:layout_below="@id/counttravel"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/proceedbutton"
+        android:id="@+id/textview"
+        android:textColor="@color/white"
+        />
+
+
+</RelativeLayout>

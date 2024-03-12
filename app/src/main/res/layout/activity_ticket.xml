@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0B7C8A"
+        app:title="Ticket Booked"
+        app:titleTextColor="@color/white"
+        android:id="@+id/toolbar5"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:layout_below="@id/toolbar5"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:id="@+id/ticketshow"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@drawable/ticket"
+        android:textAlignment="textStart"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/Done"
+        android:layout_below="@id/ticketshow"
+        android:layout_marginTop="50dp"
+        />
+
+</RelativeLayout>
